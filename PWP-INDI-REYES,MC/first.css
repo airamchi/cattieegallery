@@ -1,0 +1,285 @@
+/*for header*/
+.site-container{
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  }
+  /*forsite header*/
+  .site-header{
+  background-image: url("cat.jpg");
+  min-height: 150px;
+  }
+  /*forsite header wrap*/
+  .site-header .wrap{
+    padding:10px  20px;
+  }
+  /*for title area*/
+  .title-area{
+    padding:10px 0px;  
+    text-align:center;
+  }
+  /*for site area*/
+  .site-title a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1.0; 
+    text-transform: uppercase;
+  }
+  /*for navigation area, ul part*/
+  .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5c5150;
+  } 
+  /*for navigation area, li part*/
+  .nav li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration:none;
+  color: #fff;
+  }
+  /*for navigation area, li part to have a hover part in the button*/
+  .nav li a:hover, 
+  .nav .menu-btn:hover{
+  color:#dab7b7;
+  background-color: #fff;
+  }
+  
+  /*for navigation menu that we declared in the first part of the navigation*/
+  .nav .menu{
+  clear:both;
+  max-height: 0;
+  text-transform: uppercase;
+  transition:max-height .2s ease-in-out;
+  overflow:hidden;
+  text-align: center;
+  }
+  /*for navigation icon*/
+  .nav .menu-icon{
+   cursor:pointer;
+   float: right;
+   padding: 28px 50%;
+   position: relative;
+   user-select: none;
+  }
+  /*for navigation area, to customize the icon and menu */
+  .nav .menu-icon .nav-icon{
+  background-color: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  width:18px;
+  }
+  /*for navigation area, to customize the icon and menu before and after clicking the nav*/
+  .nav .menu-icon .nav-icon::before,
+  .nav-icon::after{
+  background-color: #333;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  }
+  
+  .nav .menu-icon .nav-icon::before{
+    top: 5px;
+  }
+  .nav .menu-icon .nav-icon::after{
+  top: -5px;
+  }
+  
+  .nav .menu-btn{
+    display: none;
+  }
+  
+  .nav .menu-btn:checked ~ .menu{
+   max-height: 471px;
+  }
+  
+  .nav .menu-btn:checked ~ .menu icon .nav-icon{
+  background: transparent;
+  }
+  
+  .nav .menu-btn:checked ~ .menu icon .nav-icon::before{
+  transform: rotate(-45deg);
+  top:0;
+  }
+  
+  .nav .menu-btn:checked ~ .menu icon .nav-icon::after{
+  transform: rotate(45deg);
+  top:0;;
+  }
+  
+  @media (min-width:48em) {
+  .nav li{
+    display: inline-table;
+  }
+  
+  .nav .menu{
+    clear: none;
+    display: block;
+    max-height: none;
+  }
+  
+  .nav .menu-icon{
+    display: none;
+  }
+  }
+  img{ /*resize the image */
+  width:100%
+  }
+  /*for wrapper area */
+  .wrapper{
+  overflow:hidden;
+  }
+  
+  
+  
+  
+  /*this is fpr footer area*/
+  .footer{
+    background-color: rgb(122, 114, 104);
+    text-align:center;
+  }
+  
+  .footer .wrap{
+    background-color: rgb(109, 98, 109);
+    padding: 40px;
+  }
+  
+  .footer .site-footer .wrap{
+    background-color: rgb(109, 98, 109);
+    
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  .fa {
+    padding: 15px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 5px;
+  }
+  
+  .fa:hover {
+      background-color: #fff;
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+      background: #6f4d70;
+    color: rgb(5, 5, 5);
+  }
+  .fa-instagram {
+    background: #6f4d70;
+      color: rgb(5, 5, 5);
+  }
+  .fa-pinterest {
+      background: #6f4d70;
+      color: rgb(5, 5, 5);
+  }
+  .fa-twitter {
+    background: #6f4d70;
+      color: rgb(5, 5, 5);
+  }
+  .fa-google {
+      background: #6f4d70;
+    color: rgb(5, 5, 5);
+  }
+  
+  
+  /*end */
